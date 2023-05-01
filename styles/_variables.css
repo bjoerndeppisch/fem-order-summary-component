@@ -10,7 +10,6 @@
     --clr-bright--hover: hsl(245, 83%, 68%);
     --clr-dark: hsl(223, 47%, 23%);
 
-
     --ff-sans: 'Red Hat Display', sans-serif;
 
     --fw-medium: 500;
@@ -19,5 +18,4 @@
 
     --border-radius: 20px;
     --border-radius-small: 10px;
-
 }

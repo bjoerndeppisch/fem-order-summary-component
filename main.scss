@@ -3,11 +3,3 @@
 @use 'styles/global';
 @use 'styles/utilities';
 @use 'styles/components';
-
-/* Debugging */
-*,
-*::before,
-*::after {
-    // outline: 1px solid limegreen !important;
-    // background: rgba(0, 100, 0, 0.1) !important;
-}

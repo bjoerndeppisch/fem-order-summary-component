@@ -3,7 +3,7 @@
 
 .card {
     &__image {
-        margin-bottom: clamp(rem(32), 1.713rem + 1.220vw, rem(45));
+        margin-bottom: clamp-builder(32, 45);
     }
 
     &__heading {
@@ -11,24 +11,24 @@
         text-align: center;
         color: var(--clr-dark);
         font-weight: var(--fw-black);
-        font-size: clamp(rem(22), 1.243rem + 0.563vw, rem(28));
+        font-size: clamp-builder(22, 28);
     }
 
     &__paragraph {
-        margin-inline: clamp(rem(32), 1.647rem + 1.502vw, rem(48));
-        margin-bottom: clamp(rem(20), 1.161rem + 0.375vw, rem(24));
+        margin-inline: clamp-builder(32, 48);
+        margin-bottom: clamp-builder(20, 24);
         text-align: center;
         color: var(--clr-desaturated);
-        font-size: clamp(rem(15), 0.915rem + 0.094vw, rem(16));
+        font-size: clamp-builder(15, 16);
     }
 }
 
 .product-overview {
     background-color: var(--clr-very-pale);
     border-radius: var(--border-radius-small);
-    margin-inline: clamp(rem(24), 0.971rem + 2.253vw, rem(48));
+    margin-inline: clamp-builder(24, 48);
     margin-bottom: rem(24);
-    padding: clamp(rem(16), 0.823rem + 0.751vw, rem(24));
+    padding: clamp-builder(16, 24);
     justify-content: space-between;
 
     &__image {
@@ -37,7 +37,7 @@
 
     &__plan {
         margin-right: auto;
-        font-size: clamp(rem(14), 0.830rem + 0.187vw, rem(16));
+        font-size: clamp-builder(14, 16);
     }
 
     &__heading {
@@ -53,7 +53,7 @@
 
     &__button {
         color: var(--clr-bright);
-        font-size: clamp(rem(13), 0.790rem + 0.093vw, rem(14));
+        font-size: clamp-builder(13, 14);
         font-weight: var(--fw-bold);
         text-decoration: underline;
     }
@@ -65,7 +65,7 @@
 }
 
 .order {
-    margin-inline: clamp(rem(24), 0.971rem + 2.253vw, rem(48));
+    margin-inline: clamp-builder(24, 48);
 
     &__proceed {
         display: block;
@@ -90,7 +90,7 @@
         font-size: rem(15);
         font-weight: var(--fw-black);
         color: var(--clr-desaturated);
-        margin-bottom: clamp(rem(32), 1.647rem + 1.502vw, rem(48));
+        margin-bottom: clamp-builder(32, 48);
     }
 
     &__cancel:hover {

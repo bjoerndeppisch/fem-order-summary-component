@@ -2,7 +2,7 @@
 @use 'abstract' as *;
 
 .wrapper {
-    max-width: clamp(rem(327), 17.730rem + 11.549vw, rem(450));
+    max-width: clamp-builder(327, 450);
     background-color: var(--clr-white);
     border-radius: var(--border-radius);
     overflow: hidden;
