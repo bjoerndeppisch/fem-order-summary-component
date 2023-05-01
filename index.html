@@ -8,24 +8,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Favicon -->
-    <!-- <link rel="icon" type="" sizes="32x32" href=""> -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-    <title>Title</title>
+    <title>Frontend Mentor | Order summary card</title>
 
     <!-- Google Fonts -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+        rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="main.css">
 
-    <!-- JavaScript -->
-    <script type="module" defer src="/js/app.js"></script>
 
 </head>
 
-<body>
+<body class='flex--center'>
 
 
+    <div class="wrapper">
+
+        <!-- Card -->
+        <main class="card">
+            <img class="card__image" src="/assets/illustration-hero.svg" alt="girl listening to music">
+            <h1 class="card__heading">Order Summary</h1>
+            <p class="card__paragraph">You can now listen to millions of songs, audiobooks, and podcasts on any
+                device anywhere you like!
+            </p>
+            <!-- Product Overview -->
+            <section class="product-overview flex--center">
+                <img class="product-overview__image" src="/assets/icon-music.svg" alt="music icon">
+                <div class="product-overview__plan">
+                    <h2 class='product-overview__heading'>Annual Plan</h2>
+                    <p class='product-overview__paragraph'>$59.99/year</p>
+                </div>
+                <button class='product-overview__button'>Change</button>
+            </section>
+            <!-- Order -->
+            <section class="order">
+                <button class='order__proceed'>Proceed to Payment</button>
+                <button class='order__cancel'>Cancel Order</button>
+            </section>
+        </main>
+
+    </div>
 
 </body>
 

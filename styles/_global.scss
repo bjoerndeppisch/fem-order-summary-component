@@ -1,6 +1,25 @@
 /* Global */
+@use 'abstract' as *;
 
 body {
-    background-color: var(--clr-background);
+    background: url(/assets/pattern-background-mobile.svg) no-repeat;
+    background-size: contain;
+    background-color: var(--clr-pale);
     font-family: var(--ff-sans);
+
+    @include breakpoint(medium) {
+        background: url(/assets/pattern-background-desktop.svg) no-repeat;
+        background-size: contain;
+        background-position-y: -100px;
+        background-color: var(--clr-pale);
+    }
+}
+
+button {
+    border: none;
+    background-color: inherit;
+
+    &:hover {
+        cursor: pointer;
+    }
 }

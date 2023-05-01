@@ -3,22 +3,21 @@
 :root {
 
     --clr-white: hsl(0, 0%, 100%);
-    --clr-background: hsl(182, 25%, 50%);
-    --clr-primary-dark: hsl(217, 45%, 22%);
-    --clr-primary-light: hsl(220, 15%, 55%);
+    --clr-very-pale: hsl(228, 100%, 98%);
+    --clr-pale: hsl(225, 100%, 94%);
+    --clr-desaturated: hsl(224, 23%, 55%);
+    --clr-bright: hsl(245, 75%, 52%);
+    --clr-bright--hover: hsl(245, 83%, 68%);
+    --clr-dark: hsl(223, 47%, 23%);
 
-    --ff-sans-serif: sans-serif;
-    --ff-serif: serif;
-    --ff-mono: monospace;
 
-    --fw-thin: 100;
-    --fw-extra-light: 200;
-    --fw-light: 300;
-    --fw-regular: 400;
+    --ff-sans: 'Red Hat Display', sans-serif;
+
     --fw-medium: 500;
-    --fw-semi-bold: 600;
     --fw-bold: 700;
-    --fw-extra-bold: 800;
     --fw-black: 900;
+
+    --border-radius: 20px;
+    --border-radius-small: 10px;
 
 }

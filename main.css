@@ -1,0 +1,208 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.4;
+  overflow-x: hidden;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+p {
+  max-width: 70ch;
+}
+
+ol,
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Variables */
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-very-pale: hsl(228, 100%, 98%);
+  --clr-pale: hsl(225, 100%, 94%);
+  --clr-desaturated: hsl(224, 23%, 55%);
+  --clr-bright: hsl(245, 75%, 52%);
+  --clr-bright--hover: hsl(245, 83%, 68%);
+  --clr-dark: hsl(223, 47%, 23%);
+  --ff-sans: "Red Hat Display", sans-serif;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+  --border-radius: 20px;
+  --border-radius-small: 10px;
+}
+
+/* Global */
+body {
+  background: url(/assets/pattern-background-mobile.svg) no-repeat;
+  background-size: contain;
+  background-color: var(--clr-pale);
+  font-family: var(--ff-sans);
+}
+@media (min-width: 48em) {
+  body {
+    background: url(/assets/pattern-background-desktop.svg) no-repeat;
+    background-size: contain;
+    background-position-y: -100px;
+    background-color: var(--clr-pale);
+  }
+}
+
+button {
+  border: none;
+  background-color: inherit;
+}
+button:hover {
+  cursor: pointer;
+}
+
+/* Utilities */
+.wrapper {
+  max-width: clamp(20.4375rem, 17.73rem + 11.549vw, 28.125rem);
+  background-color: var(--clr-white);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+.flex--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Components */
+.card__image {
+  margin-bottom: clamp(2rem, 1.713rem + 1.22vw, 2.8125rem);
+}
+.card__heading {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--clr-dark);
+  font-weight: var(--fw-black);
+  font-size: clamp(1.375rem, 1.243rem + 0.563vw, 1.75rem);
+}
+.card__paragraph {
+  margin-inline: clamp(2rem, 1.647rem + 1.502vw, 3rem);
+  margin-bottom: clamp(1.25rem, 1.161rem + 0.375vw, 1.5rem);
+  text-align: center;
+  color: var(--clr-desaturated);
+  font-size: clamp(0.9375rem, 0.915rem + 0.094vw, 1rem);
+}
+
+.product-overview {
+  background-color: var(--clr-very-pale);
+  border-radius: var(--border-radius-small);
+  margin-inline: clamp(1.5rem, 0.971rem + 2.253vw, 3rem);
+  margin-bottom: 1.5rem;
+  padding: clamp(1rem, 0.823rem + 0.751vw, 1.5rem);
+  justify-content: space-between;
+}
+.product-overview__image {
+  margin-right: 1.25rem;
+}
+.product-overview__plan {
+  margin-right: auto;
+  font-size: clamp(0.875rem, 0.83rem + 0.187vw, 1rem);
+}
+.product-overview__heading {
+  color: var(--clr-dark);
+  font-weight: var(--fw-black);
+  font-size: inherit;
+}
+.product-overview__paragraph {
+  color: var(--clr-desaturated);
+  font-size: inherit;
+}
+.product-overview__button {
+  color: var(--clr-bright);
+  font-size: clamp(0.8125rem, 0.79rem + 0.093vw, 0.875rem);
+  font-weight: var(--fw-bold);
+  text-decoration: underline;
+}
+.product-overview__button:hover {
+  color: var(--clr-bright--hover);
+}
+
+.order {
+  margin-inline: clamp(1.5rem, 0.971rem + 2.253vw, 3rem);
+}
+.order__proceed {
+  display: block;
+  width: 100%;
+  background-color: var(--clr-bright);
+  color: var(--clr-white);
+  font-size: 0.9375rem;
+  font-weight: var(--fw-black);
+  border-radius: var(--border-radius);
+  padding-block: 0.9375rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 20px -5px var(--clr-bright--hover);
+}
+.order__proceed:hover {
+  background-color: var(--clr-bright--hover);
+}
+.order__cancel {
+  display: block;
+  margin-inline: auto;
+  font-size: 0.9375rem;
+  font-weight: var(--fw-black);
+  color: var(--clr-desaturated);
+  margin-bottom: clamp(2rem, 1.647rem + 1.502vw, 3rem);
+}
+.order__cancel:hover {
+  color: var(--clr-dark);
+}
+
+/* Debugging *//*# sourceMappingURL=main.css.map */
