@@ -8,8 +8,8 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- [Soulution](https://your-solution-url.com)
-- [Live Site](https://your-live-site-url.com)
+- [Soulution](https://github.com/bjoerndeppisch/fem-order-summary-component)
+- [Live Site](https://bjoerndeppisch-fem-order-summary.netlify.app/)
 
 ### Built with
 
